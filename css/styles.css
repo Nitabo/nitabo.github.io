@@ -1,0 +1,278 @@
+/* Color Palette
+
+https://coolors.co/f6e8ea-ef626c-22181c-312f2f-84dccf
+#f6e8ea - Isabelline (very light pink)
+#ef626c - Light Carmine Pink
+#22181c - Eerie Black
+#312f2f - Jet (drak gray/brown)
+#84dccf - Middle Blue Green
+
+#ed4c67 - Strong pink
+#9FA8DA - Lavender
+------------------------------*/
+
+/* Google Fonts
+
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Merienda One', cursive;
+
+-------------------------------*/
+
+
+
+/* Global Styles
+-------------------------------*/
+
+/* apply a natural box layout model to all elements, but allowing components to change
+ Paul Irish code */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+	color: #ed4c67;
+}
+
+a:hover {
+    text-decoration: none;
+	background-color: #ed4c67;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #9FA8DA;
+    color: #000000;
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Header and Footer
+-------------------------------*/
+header {
+    background-color: #ed4c67;
+    color: #f6e8ea;
+}
+
+/* Header */
+header {
+    padding-top: 50px;
+    position: relative;
+    text-align: justify;
+}
+
+.profile-image {
+    border-radius: 50%;
+	border: 5px dotted white;
+	padding: 3px;
+	background: #9FA8DA;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header h1, header h2 {
+    color: white;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+	background-color: #312f2f;
+	color: white;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+	background-color: white;
+}
+
+/* Navigation
+-------------------------------*/
+nav {
+    text-align:center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: #312f2f;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #ed4c67;
+    color: white;
+}
+
+
+/* Experience
+-------------------------------*/
+.experience {
+    background-color: #f6e8ea;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.experience p {
+    text-align: justify;
+}
+
+.job-description {
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+
+/* Education
+-------------------------------*/
+.education {
+    /*background-color: #ef626c;*/
+    background: linear-gradient(rgba(239, 98, 108, 0.8), rgba(239, 98, 108, 0.5)),
+                url(../images/pink-notebook-1.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+
+.education p {
+    text-align: justify;
+}
+
+
+/* Skills
+-------------------------------*/
+.skills {
+	background-color: #f6e8ea;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td, th {
+  border: 1px solid #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+td {
+  text-align: left;
+  padding-left: 130px;
+}
+
+
+/* Ethics
+-------------------------------*/
+.ethics {
+	background: url(../images/background-1.png);
+	background-size: 100%;
+}
+
+.ethics p {
+    text-align: justify;
+}
+
+
+/* Media Queries
+-------------------------------*/
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+    .profile-image {
+        width: 200px;
+    }
+}
