@@ -1,0 +1,30 @@
+.card-columns .card {
+    margin-bottom: 0.75rem !important;
+}
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 3 !important;
+        column-gap: 1.25rem !important;
+        orphans: 1;
+        widows: 1;
+    }
+    .card-columns .card {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.card-columns img.zoom {
+    filter: grayscale(100%);
+}
+.card-columns img.zoom-hover {
+    filter: grayscale(0%);
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: transform .3s; /* Animation */
+}
+
+.card img.square{
+    object-fit: cover;
+    height: 200px !important;
+    width: 200px !important;  
+  }

@@ -8,3 +8,17 @@ main {
     flex: 1 0 auto;
 }
 
+.nav-wrapper .input-field input[type=search] {
+    width: 600px;
+    height: 64px;
+}
+
+#hero {
+    min-height: 604px; 
+    background-image: url('../images/hero-2.jpg'); 
+    background-repeat: repeat-x;
+}
+
+nav ul li.black-text {
+    color: #000000;
+}
