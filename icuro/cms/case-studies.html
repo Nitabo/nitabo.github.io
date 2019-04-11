@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Icuro Dashboard</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    
+    <header>
+        <nav class="blue darken-3">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                    <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                    <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="https://pixinvent.com/free-materialize-material-design-admin-template/images/gallary/12.png">
+                </div>
+                <a href="#user"><img class="circle" src="https://pixinvent.com/free-materialize-material-design-admin-template/images/avatar/avatar-7.png"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="">
+            <ul class="collapsible collapsible-accordion">
+                <li class="active">
+                    <a class="collapsible-header">Content
+                        <i class="material-icons">arrow_drop_down</i>
+                    </a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li class="active"><a href="case-studies.html">Case studies</a></li>
+                            <li><a href="team-members.html">Team members</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li><a href="users.html">Users</a></li>
+    </ul>
+    
+    
+    <main>
+        <h5>Case studies</h5>        
+        <div class="col s12">
+            <a href="index.html" class="breadcrumb">Dashboard</a>
+            <a class="breadcrumb">Content</a>
+            <a class="breadcrumb">Case studies</a>
+        </div>
+        
+        <table class="highlight responsive">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Author</th>
+                    <th>Content</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Case study 1</td>
+                    <td>04/01/2019</td>
+                    <td>Bipin Thomas</td>
+                    <td class="truncate">Ad esse aspernatur tempore error ipsa ipsum laboriosam, eum, culpa numquam maxime voluptatibus. Necessitatibus culpa ad dignissimos repudiandae. Aspernatur explicabo libero provident.</td>
+                    <td>
+                        <a class="waves-effect waves-light btn-floating btn-small blue modal-trigger" href="#editModal">
+                            <i class="large material-icons">edit</i>
+                        </a>
+                        <a class="waves-effect waves-light btn-floating btn-small red modal-trigger" href="#deleteModal">
+                            <i class="large material-icons">delete</i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Case study 2</td>
+                    <td>04/10/2019</td>
+                    <td>Bipin Thomas</td>
+                    <td class="truncate">Omnis at nesciunt nemo earum, explicabo enim et animi ut suscipit blanditiis velit iste veritatis, libero quam cumque fuga qui corrupti deleniti!</td>
+                    <td>
+                        <a class="waves-effect waves-light btn-floating btn-small blue modal-trigger" href="#editModal">
+                            <i class="large material-icons">edit</i>
+                        </a>
+                        <a class="waves-effect waves-light btn-floating btn-small red modal-trigger" href="#deleteModal">
+                            <i class="large material-icons">delete</i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Case study 3</td>
+                    <td>04/20/2019</td>
+                    <td>Bipin Thomas</td>
+                    <td class="truncate">Voluptas reprehenderit, laborum et labore fugiat atque, at dicta neque, illo unde iusto error id omnis possimus? Molestias hic cum assumenda officiis.</td>
+                    <td>
+                        <a class="waves-effect waves-light btn-floating btn-small blue modal-trigger" href="#editModal">
+                            <i class="large material-icons">edit</i>
+                        </a>
+                        <a class="waves-effect waves-light btn-floating btn-small red modal-trigger" href="#deleteModal">
+                            <i class="large material-icons">delete</i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="fixed-action-btn">
+            <a class="waves-effect waves-light btn-floating btn-large green modal-trigger" href="#addModal">
+                <i class="large material-icons">add</i>
+            </a>
+        </div>
+        
+        <!-- Modal Structure -->
+        <div id="addModal" class="modal modal-fixed-footer">
+            <!-- <div id="modal1" class="modal bottom-sheet"> -->
+                <div class="modal-content">
+                    <h4>New case study</h4>
+                    <!-- <p>A bunch of text</p> -->
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="title" type="text" class="validate" data-length="100">
+                                    <label for="title">Title</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input type="text" class="datepicker validate">
+                                    <label for="date" class="active">Date</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="author_name" type="text" class="validate" data-length="250">
+                                    <label for="author_name">Author name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <label for="content">Content</label>
+                                    <textarea id="content" class=""></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                        
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-white btn-flat red white-text">Cancel</a>
+                    <a href="#!" class="modal-close waves-effect waves-white btn-flat green white-text">Validate</a>
+                </div>
+                
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="editModal" class="modal modal-fixed-footer">
+                <!-- <div id="modal1" class="modal bottom-sheet"> -->
+                    <div class="modal-content">
+                        <h4>Case study 1</h4>
+                        <!-- <p>A bunch of text</p> -->
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="title" value="Case study 1" type="text" class="validate" data-length="100">
+                                        <label for="title">Title</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input type="text" value="04/01/2019" class="datepicker validate">
+                                        <label for="date" class="active">Date</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="author_name" value="Bipin Thomas" type="text" class="validate" data-length="250">
+                                        <label for="author_name">Author name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <label for="content">Content</label>
+                                        <textarea id="content" class="">
+                                            Ad esse aspernatur tempore error ipsa ipsum laboriosam, eum, culpa numquam maxime voluptatibus. Necessitatibus culpa ad dignissimos repudiandae. Aspernatur explicabo libero provident.
+                                            
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                        
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-white btn-flat red white-text">Cancel</a>
+                        <a href="#!" class="modal-close waves-effect waves-white btn-flat green white-text">Validate</a>
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <div id="deleteModal" class="modal">
+                    <div class="modal-content">
+                        <h4>Are you sure to delete this item?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-white btn-flat red white-text">Cancel</a>
+                        <a href="#!" class="modal-close waves-effect waves-white btn-flat green white-text">Confirm</a>
+                    </div>
+                </div>
+            </main>
+            <footer></footer>
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=umwlmmxq360guzbgzx87w7g8r1vruvlo2ib7qcwaq0xj5gak"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {            
+                    var collapsibles = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(collapsibles);
+                    var modals = document.querySelectorAll('.modal');
+                    var instances = M.Modal.init(modals);
+                    var datepicker = document.querySelectorAll('.datepicker');
+                    var instances = M.Datepicker.init(datepicker);
+                    var title = document.querySelector('#title');
+                    var titleCountInstance = new M.CharacterCounter(title);
+                    var author_name = document.querySelector('#author_name');
+                    var author_nameCountInstance = new M.CharacterCounter(author_name);
+                    tinymce.init(
+                    { 
+                        selector: 'textarea',
+                        height: 330,
+                        plugins: "fullscreen" ,
+                        toolbar: "fullscreen | undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | link image",
+                        menubar: false,
+                    }
+                    );
+                });
+            </script>
+        </body>
+        </html>
