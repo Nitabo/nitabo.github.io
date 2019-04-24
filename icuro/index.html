@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-columns.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -35,17 +36,24 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="transparent">
+        <nav class="black">
             <div class="container nav-wrapper">
                 <a href="#" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">I am AI<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="search.html"><i class="material-icons">search</i></a></li>
+                    <li class="nav-elements">
+                        <a id="searchButton"><i class="material-icons">search</i></a>
+                    </li>
+                    <div id="searchNavElement" class="input-field hide">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="right material-icons">close</i>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -55,10 +63,33 @@
 <main>
 
     <!-- Hero -->
-    <div class="valign-wrapper" style="height: 550px;">
+    <div id="hero">
         <div class="container">
-            <div class="col l6 s12">
-                <h1 class="center-align white-text">ACCELERATING WITH AI</h1>
+            <div class="card-columns">
+                <!-- Top-left -->
+                <div class="card transparent right-align z-depth-0" style="margin-top: 60px;">
+                    <a href="case-study.html"><img class="square responsive-img zoom" src="images/1.png" alt="" srcset=""></a>
+                </div>
+                <!-- Left -->
+                <div class="card transparent z-depth-0">
+                    <a href="case-study.html"><img class="square responsive-img zoom" src="images/2.png" alt="" srcset=""></a>
+                </div>
+                <!-- Top-center -->
+                <div class="card transparent center-align z-depth-0">
+                    <a href="case-study.html"><img class="square responsive-img zoom" src="images/3.png" alt="" srcset=""></a>
+                </div>
+                <!-- Center -->
+                <div class="card transparent center-align z-depth-0">
+                    <h1 class="white-text center-align">ACCELERATING WITH AI</h1>
+                </div>
+                <!-- Top-right -->
+                <div class="card transparent left-align z-depth-0" style="margin-top: 60px;">
+                    <a href="case-study.html"><img class="square responsive-img zoom" src="images/4.png" alt="" srcset=""></a>
+                </div>
+                <!-- Right -->
+                <div class="card transparent right-align z-depth-0" >
+                    <a href="case-study.html"><img class="square responsive-img zoom" src="images/5.png" alt="" srcset=""></a>
+                </div>   
             </div>
         </div>
     </div>

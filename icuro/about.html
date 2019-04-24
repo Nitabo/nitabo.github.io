@@ -35,19 +35,26 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="transparent">
+        <nav class="black">
             <div class="container nav-wrapper">
                 <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a href="search.html"><i class="material-icons">search</i></a></li>
+                    <li class="nav-elements">
+                        <a id="searchButton"><i class="material-icons">search</i></a>
+                    </li>
+                    <div id="searchNavElement" class="input-field hide">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="right material-icons">close</i>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -69,7 +76,7 @@
     <!-- /Hero -->
 
     <!-- Who we are -->
-    <div class="container" style="margin-top: 270px; background-image: url(images/neural_background.jpg); padding:20px;">
+    <div class="container" style="max-width: 1000px; margin-top: 270px; background-image: url(images/neural_background.jpg); padding:20px;">
         <div class="col s12 m4 l8 center-align">
             <h2>Who we are</h2>
             <p>
