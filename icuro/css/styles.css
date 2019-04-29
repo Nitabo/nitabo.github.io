@@ -8,21 +8,82 @@ main {
     flex: 1 0 auto;
 }
 
+.dropdown-content li > a, .dropdown-content li > span {
+    color: black;
+}
+
 .nav-wrapper .input-field input[type=search] {
     width: 600px;
     height: 64px;
 }
 
-#hero {
+#whitehero {
     min-height: 604px; 
     height: 100vh;
-    background-image: url('../images/hero-2.jpg'); 
+    background-image: url("../images/neural_background_light.jpg"); 
     background-repeat: repeat-x;
     background-size: auto 100%;
     background-position: left top;
     padding-top: 100px; 
 } 
 
+#darkhero {
+    min-height: 604px; 
+    height: 100vh;
+    background-image: url("../images/neural_background_light_inverted.jpg"); 
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: left top;
+    padding-top: 100px; 
+} 
+
+#commonhero {
+    min-height: 304px; 
+    height: 60vh;
+    background-image: url("../images/neural_background_light.jpg"); 
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: left top;
+}
+
+#casestudyhero {
+    min-height: 304px; 
+    height: 67vh;
+    background-image: url("../images/neural_background_light.jpg"); 
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: left top;
+}
+
+.navbar-fixed {
+    z-index: 9999;
+}
+
 nav ul li.black-text {
     color: #000000;
+}
+
+.breadcrumb::before {
+    color: #000000;
+}
+
+#colorstrip {
+    height: 0px;
+    border-bottom: solid 15px #d4e157;
+}
+
+blockquote {
+    border-color: #ff5722;
+}
+
+.btn-flat:hover {
+    background-color: #d4e157;
+}
+
+.card .card-action a:not(.btn):not(.btn-floating):not(.btn-large):not(.btn-small):not(.btn-large):hover {
+    color: #3949ab;
+}
+
+.card .card-action a:not(.btn):not(.btn-floating):not(.btn-large):not(.btn-small):not(.btn-large) {
+    color: #3949ab;
 }

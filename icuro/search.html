@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -35,18 +35,18 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -55,26 +55,29 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
 
 <main>
 
-    <!-- Hero -->
-    <div class="container" style="margin-top: 200px;">
-        <div class="row">
-            <div class="input-field col s6">
-                <input value="robots" id="search" type="text" class="validate white-text">
-                <label class="active" for="search">Search</label>
-                <a class="waves-effect waves-light btn-flat lime">Search</a>
+    <div id="commonhero">
+        <!-- Hero -->
+        <div class="container" style="padding-top: 150px;">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input value="robots" id="search" type="text" class="validate">
+                    <label class="active" for="search">Search</label>
+                    <a class="waves-effect waves-light btn-flat lime">Search</a>
+                </div>
             </div>
         </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
 
     <!-- Search -->
-    <div class="container" style="margin-top: 300px;">
+    <div class="container" style="margin-top: 100px;">
         <h3>
             You searched for: robots
         </h3>

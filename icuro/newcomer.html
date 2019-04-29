@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -35,18 +35,18 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -55,48 +55,51 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
 
 <main>
 
-    <!-- Breadcrumb -->
-    <div class="container">
-        <nav class="black">
-            <div class="nav-wrapper">
-                <div class="col s12">
-                    <a href="index.html" class="breadcrumb">Home</a>
-                    <a href="#!" class="breadcrumb">Strategy</a>
-                    <a href="#!" class="breadcrumb">Newcomer</a>
+    <div id="commonhero">
+        <!-- Breadcrumb -->
+        <div class="container">
+            <nav class="white z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb black-text">Home</a>
+                        <a href="#!" class="breadcrumb black-text">Strategy</a>
+                        <a href="#!" class="breadcrumb black-text">Newcomer</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-    <!-- /Breadcrumb -->
+            </nav>
+        </div>
+        <!-- /Breadcrumb -->
 
-    <!-- Hero -->
-    <div class="container" style="margin-top:130px;">
-        <div class="col s12 m4 l8">
-                <h1 class="white-text">AI IS ...</h1>
-                <blockquote class="white-text">
-                    <p>The science of making machines intelligent, so they can recognize patterns
-                        and get really good at helping people solve specific challenges or sets of challenges.</p>
-                </blockquote>
-                <p class="white-text">Artificial intelligence is in use when a computer program makes a decision on a prediction—this
-                    could be through straightforward rule-based systems, such as “if rain, then umbrella.”</p>
-            </div>
+        <!-- Hero -->
+        <div class="container" style="margin-top:130px;">
+            <div class="col s12 m4 l8">
+                    <h1 >AI IS ...</h1>
+                    <blockquote>
+                        <p class="flow-text">...The science of making machines intelligent, so they can recognize patterns
+                            and help people solve specific challenges.</p>
+                    </blockquote>
+                    <p>Artificial intelligence is in use when a computer program makes a decision on a prediction, such as “if rain, then umbrella.”</p>
+                </div>
+        </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
+   
 
     <!-- About AI -->
-    <div class="container" style="margin-top:250px;">
+    <div class="container" style="margin-top:100px;">
         <div class="row">
             <div class="col s12 m4 l4 center-align">
                 <h4>
                     ... Everything
                 </h4>
-                <img src="images/icon-connectivity.svg" alt="connectivity" style="width: 200px; height: 200px;">
+                <img src="images/icon-iot.svg" alt="connectivity" style="width: 150px; height: 150px;">
                 <p>
                     AI is the new electricity, it is in the air, it is all around us...
                     Every object is connected to offer the best user experience ever.
@@ -106,7 +109,7 @@
                 <h4>
                     ... Everywhere
                 </h4>
-                <img src="images/icon-health.svg" alt="health" style="width: 200px; height: 200px;">
+                <img src="images/icons_language.svg" alt="planet" style="width: 150px; height: 150px;">
                 <p>
                     AI now belongs to every part of our lives, at work, at home,
                     saving lives, accelerating businesses, improving any experience.
@@ -116,7 +119,7 @@
                 <h4>
                     ... Everyone
                 </h4>
-                <img src="images/icon-people.svg" alt="people" style="width: 200px; height: 200px;">
+                <img src="images/icon-people-lime.svg" alt="people" style="width: 150px; height: 150px;">
                 <p>Everyone can benefit from AI, individuals, students, business, children, elders... 
                     Here in the USA or anywhere in the world.
                 </p>
@@ -128,12 +131,18 @@
     <!-- Possibilities -->
     <div class="container" style="margin-top: 100px;">
         <div class="col s12 m4 l8">
-            <h3>Envision your true possibilities</h3>
-            <p>IMAGINE ... Duis aute irure dolor in reprehenderit in voluptate velit esse
+            <h3 class="center-align">Envision your true possibilities</h3>
+            <p>IMAGINE your business challenges being solved even before they appear... Voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>IMAGINE ... Duis aute irure dolor in reprehenderit in voluptate velit esse
+            <p>IMAGINE your house being able to anticipate when you are coming home... In voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>IMAGINE ... Duis aute irure dolor in reprehenderit in voluptate velit esse
+            <p>IMAGINE your car reacting even before you can ... Dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation.</p>
         </div>
     </div>
@@ -156,20 +165,6 @@
     <div class="container" style="margin-top: 100px;">
         <div class="col s12 m4 l8">
             <h3>Testimonials</h3>
-            <p>
-                In this era of disruptive technologies shaping new businesses, people still come first.
-            </p>
-            <p>
-                Our team brings in the combined business and technology expertise to lead you into the intelligence
-                revolution.
-            </p>
-            <p>
-                We rely on an ever-expanding group of experts working hand in hand, among them industry practitioners,
-                hardware-software convergence experts, technology platform specialists, partners and consultants.
-            </p>
-            <p>
-                We are inspired by the future of autonomous technologies, but we stay grounded by building expertise.
-            </p>
             <div class="row">
                 <div class="col s12 m3 l3">
                     <img src="images/avatar.png" alt="photo" style="width:150px;" class="left circle">

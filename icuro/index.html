@@ -36,18 +36,20 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white z-depth-0">
             <div class="container nav-wrapper">
-                <a href="#" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
+                <a href="#" class="brand-logo"><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger right hide-on-large-only"><i class="material-icons black-text">menu</i></a>
+                <!-- Desktop Menu -->
                 <ul class="right hide-on-med-and-down">
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">I am AI<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -55,15 +57,35 @@
                         <i class="right material-icons">close</i>
                     </div>
                 </ul>
+
             </div>
+            <div id="colorstrip"></div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <ul class="sidenav" id="nav-mobile">
+                <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="nav-elements">
+                    <a id="searchButton"><i class="material-icons black-text">search</i></a>
+                </li>
+                <div id="searchNavElement" class="input-field hide">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="right material-icons">close</i>
+                </div>
+            </ul>
     </div>
 </header>
 
 <main>
 
     <!-- Hero -->
-    <div id="hero">
+    <div id="whitehero">
         <div class="container">
             <div class="card-columns">
                 <!-- Top-left -->
@@ -80,7 +102,7 @@
                 </div>
                 <!-- Center -->
                 <div class="card transparent center-align z-depth-0">
-                    <h1 class="white-text center-align">ACCELERATING WITH AI</h1>
+                    <h1 class="black-text center-align">WE ARE AI</h1>
                 </div>
                 <!-- Top-right -->
                 <div class="card transparent left-align z-depth-0" style="margin-top: 60px;">
@@ -98,26 +120,24 @@
     <!-- About Strategy -->
     <div class="container" style="margin-top: 100px;">
         <div class="col l6 s12">
-            <h2 class="center-align">
-                EXPLORE YOUR FULL POTENTIAL
-            </h2>
+            <h2 class="center-align">Strategy</h2>
             <div style="padding: 25px;">
-                <p>You are new to AI and wonder what is in there for you and your business...</p>
-                <p>We offer to be your guide to the new age.
-                    <a class="waves-effect waves-teal btn-flat lime right" href="newcomer.html">Enter the revolution</a>
+                <p class="flow-text">You are new to AI and wonder what is in there for you and your business...</p>
+                <p class="flow-text">We offer to be your guide to the new age.
+                    <a class="waves-effect waves-teal btn-flat lime lighten-1 right" href="newcomer.html">Enter the revolution</a>
                 </p>
             </div>
             <div style="padding: 25px;">
-                <p>You are eager to learn more about AI and you want to practice it yourself...</p>
-                <p>We welcome you to our cutting-edge labs.
-                    <a class="waves-effect waves-teal btn-flat lime right" href="engineer.html">Become a leader in
+                <p class="flow-text">You are eager to learn more about AI and you want to practice it yourself...</p>
+                <p class="flow-text">We welcome you to our cutting-edge labs.
+                    <a class="waves-effect waves-teal btn-flat lime lighten-1 right" href="engineer.html">Become a leader in
                         AI</a>
                 </p>
             </div>
             <div style="padding: 25px;">
-                <p>You want a professional solution to implement AI in your business...</p>
-                <p>We provide fully built-in solutions.
-                    <a class="waves-effect waves-teal btn-flat lime right" href="business.html">Discover our
+                <p class="flow-text">You want a professional solution to implement AI in your business...</p>
+                <p class="flow-text">We provide fully built-in solutions.
+                    <a class="waves-effect waves-teal btn-flat lime lighten-1 right" href="business.html">Discover our
                         expertise</a>
                 </p>
             </div>
@@ -127,42 +147,36 @@
 
     <!-- About Competency -->
     <div class="container" style="margin-top: 100px;">
-        <h3>Our competency</h3>
-        <p>
-            We specialize in A.I. and make sure we cover every aspect of our subject. Here are the main branches:
-        </p>
+        <h3 class="center-align">Competency</h3>
         <div class="row">
             <div class="col s12 m4 l4 center-align">
                 <div>
-                    <img src="images/icon-robot.svg" style="width: 200px; height: 200px;">
+                    <img src="images/icon-robot-lime.svg" style="width: 150px; height: 150px;">
                 </div>
                 <div>
-                    <a class="waves-effect btn-flat btn-large" href="robotics.html">ROBOTICS</a>
-                    <p>Intelligent machines have become much aware of the world around them as
-                        they talk to other internet enabled devices.</p>
-                    <p>Find out how our robots can change your world for the better.</p>
-                </div>
-            </div>
-            <div class="col s12 m4 l4 center-align">
-                <div>
-                    <img src="images/icon-platform.svg" style="width: 200px; height: 200px;">
-                </div>
-                <div>
-                    <a class="waves-effect btn-flat btn-large" href="platforms.html">PLATFORMS</a>
-                    <p>When hardware and software collide, augmented intelligence can supplement and
-                        support human analysis.</p>
-                    <p>Find out how our platforms can change your world for the better.</p>
+                    <h5>ROBOTICS</h5>
+                    <p>Intelligent machines can talk to other connected devices and become aware of the world around them.</p>
+                    <a class="waves-effect btn-flat btn-large" href="robotics.html">More about robotics</a>
                 </div>
             </div>
             <div class="col s12 m4 l4 center-align">
                 <div>
-                    <img src="images/icon-security.svg" style="width: 200px; height: 200px;">
+                    <img src="images/icon-platform-lime.svg" style="width: 150px; height: 150px;">
                 </div>
                 <div>
-                    <a class="waves-effect btn-flat btn-large" href="security.html">SECURITY</a>
-                    <p>Intelligence systems can learn how to monitor any device interconnected via internet
-                        to detect risks before they emerge.</p>
-                    <p>Find out how our security systems can change your world for the better.</p>
+                    <h5>PLATFORMS</h5>
+                    <p>Hardware and software collide to create augmented intelligence that can support human analysis.</p>
+                    <a class="waves-effect btn-flat btn-large" href="platforms.html">More about platforms</a>
+                </div>
+            </div>
+            <div class="col s12 m4 l4 center-align">
+                <div>
+                    <img src="images/icon-security-lime.svg" style="width: 150px; height: 150px;">
+                </div>
+                <div>
+                    <h5>SECURITY</h5>
+                    <p>Intelligence systems learn how to monitor interconnected device to detect risks before they emerge.</p>
+                    <a class="waves-effect btn-flat btn-large" href="security.html">More about security</a>
                 </div>
             </div>
         </div>
@@ -172,7 +186,7 @@
     <!-- About ICURO -->
     <div class="container" style="margin-top: 100px;">
         <div class="col s12 m4 l8">
-            <h3>Our mission</h3>
+            <h3 class="center-align">Mission</h3>
             <blockquote>
                 <p class="mb-0">“I” stands for Intelligence and “CURO” is Latin for caring.</p>
                 <footer class="blockquote-footer">Bipin Thomas <cite title="Source Title"> founder of ICURO</cite>
@@ -186,7 +200,7 @@
             </p>
             <p>
                 Our core value is people first.
-                <a class="waves-effect waves-teal btn-flat lime right" href="about.html">More about us</a>
+                <a class="waves-effect waves-teal btn-flat lime lighten-1 right" href="about.html">More about us</a>
             </p>
         </div>
     </div>
@@ -197,8 +211,11 @@
         <div>
             <h3 class="center-align">Latest news</h3>
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col s12 m4 l4">
                     <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
                         <div class="card-content">
                             <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
                             <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
@@ -209,8 +226,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6">
+                <div class="col s12 m4 l4">
                     <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
+                            <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
+                            <p>Interview with Bipin Thomas</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link to source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
                         <div class="card-content">
                             <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
                             <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
@@ -286,5 +321,7 @@
 		crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="script.js"></script>
+<script>var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);</script>
 </body>
 </html>

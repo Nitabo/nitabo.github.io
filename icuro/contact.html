@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -35,20 +35,18 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -57,28 +55,30 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
-
 <main>
 
-    <!-- Hero -->
-    <div class="container" style="margin-top:260px;">
-        <div class="col s12 m4 l8">
-            <h2 class="white-text">Let's get in touch!</h2>
-            <h3 class="white-text">We'd love to hear from you</h3>
+    <div id="commonhero">
+        <!-- Hero -->
+        <div class="container" style="padding-top:150px;">
+            <div class="col s12 m4 l8">
+                <h2>Let's get in touch!</h2>
+                <h3>We'd love to hear from you</h3>
+            </div>
         </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
 
     <!-- Form -->
-    <div class="container" style="margin-top:280px;">
+    <div class="container" style="margin-top:50px;">
         <div class="row">
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <input id="first_name" type="text" class="validate">
                         <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
@@ -107,10 +107,10 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Textarea</label>
+                        <label for="textarea1">Your message</label>
                     </div>
                 </div>
-                <a class="waves-effect waves-light btn-flat lime">SUBMIT</a>
+                <a class="waves-effect waves-light btn-flat lime lighten-1">SUBMIT</a>
             </form>
         </div>
     </div>

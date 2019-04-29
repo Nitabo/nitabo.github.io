@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -31,24 +31,22 @@
     <!-- Dropdown Structure -->
     <ul id="dropdown3" class="dropdown-content">
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -57,23 +55,26 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
 
 <main>
 
-    <!-- Hero -->
-    <div class="container" style="margin-top:260px;">
-        <div class="col s12 m4 l8">
-            <h2 class="white-text">Welcome to our blog</h2>
-            <h3 class="white-text">Find here all our case studies...</h3>
+    <div id="commonhero">
+        <!-- Hero -->
+        <div class="container" style="padding-top:150px;">
+            <div class="col s12 m4 l8">
+                <h2>Welcome to our blog</h2>
+                <h3>Find here all our case studies...</h3>
+            </div>
         </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
 
     <!-- Case studies -->
-    <div class="container" style="margin-top:280px;">
+    <div class="container" style="margin-top: 50px;">
         <div class="col s12" style="margin-top: 50px;">
             <a href="case-study.html"><h5>CASE STUDY #1</h5></a>
             <div class="col s12 m4 l4">
@@ -146,18 +147,20 @@
     <!-- /Case studies -->
     
     <!-- Call to action-->
-    <div class="container" style="margin-top:100px;">
-        <div class="col s12 m4 l8">
-            <h3>Our case studies</h3>
-            <p>For every technical problem we solve with a customer we create a case study.
-                All our case studies are available on this site to showcase our competency.</p>
-            <p>You can download our case studies or subscribe to receive the new ones in your mail.</p>
+    <div class="container" style="margin-top: 100px;">
+        <div>
+            <h5>Want to receive updates about ICURO's work in your mailbox?</h5>
+            <p>Subscribe to our newsletter and receive our new case studies when they are published.</p>
         </div>
         <div class="row">
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
             <div class="input-field col s12">
                 <input id="email" type="email" class="validate">
                 <label for="email">Email</label>
-                <a class="waves-effect waves-light btn lime black-text">Subscribe</a>
+                <a class="waves-effect waves-light btn-flat lime lighten-1">Send</a>
                 <p>We will not send spam or sell your details to third parties, you can unsubscribe at any time.</p>
             </div>
         </div>
@@ -168,55 +171,55 @@
 
 <!-- Footer -->
 <footer class="page-footer lime" style="margin-top: 100px;">
-        <div class="grey darken-3" style="padding-top: 20px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col l4 s12">
-                        <h5>Company</h5>
-                        <ul>
-                            <li><a class="waves-effect btn-flat white-text" href="about.html">ABOUT</a></li>
-                            <li><a class="waves-effect btn-flat white-text" href="blog.html">BLOG</a></li>
-                            <li><a class="waves-effect btn-flat white-text" href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l6 s12">
-                        <h5>Office</h5>
-                        <ul>
-                            <li>
-                                <i class="material-icons">location_on</i> 3350 Scott Boulevard, Building 53 #5301
-                            </li>
-                            <li>
-                                Santa Clara, CA 95054
-                            </li>
-                            <li>
-                                <i class="material-icons">phone</i>
-                                (408) 816-7110
-                            </li>
-                            <li>
-                                <i class="material-icons">email</i>
-                                <a class="text-muted" href="mailto:info@icuro.com">info@icuro.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5>Social</h5>
-                        <ul>
-                            <li><a href="#!"><img src="images/facebook.svg" style="width: 25px;" alt="facebook"></a></li>
-                            <li><a href="#!"><img src="images/twitter.svg" style="width: 25px;" alt="twitter"></a></li>
-                            <li><a href="#!"><img src="images/linkedin.svg" style="width: 25px;" alt="linkedin"></a></li>
-                            <li><a href="#!"><img src="images/youtube.svg" style="width: 25px;" alt="youtube"></a></li>
-                        </ul>
-                    </div>
+    <div class="grey darken-3" style="padding-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a class="waves-effect btn-flat white-text" href="about.html">ABOUT</a></li>
+                        <li><a class="waves-effect btn-flat white-text" href="blog.html">BLOG</a></li>
+                        <li><a class="waves-effect btn-flat white-text" href="contact.html">CONTACT</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center-align">
-                    © 2019 Copyright Text @
-                    <a class="deep-orange-text" href="#!"> ICURO </a>
+                <div class="col l6 s12">
+                    <h5>Office</h5>
+                    <ul>
+                        <li>
+                            <i class="material-icons">location_on</i> 3350 Scott Boulevard, Building 53 #5301
+                        </li>
+                        <li>
+                            Santa Clara, CA 95054
+                        </li>
+                        <li>
+                            <i class="material-icons">phone</i>
+                            (408) 816-7110
+                        </li>
+                        <li>
+                            <i class="material-icons">email</i>
+                            <a class="text-muted" href="mailto:info@icuro.com">info@icuro.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l2 s12">
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="#!"><img src="images/facebook.svg" style="width: 25px;" alt="facebook"></a></li>
+                        <li><a href="#!"><img src="images/twitter.svg" style="width: 25px;" alt="twitter"></a></li>
+                        <li><a href="#!"><img src="images/linkedin.svg" style="width: 25px;" alt="linkedin"></a></li>
+                        <li><a href="#!"><img src="images/youtube.svg" style="width: 25px;" alt="youtube"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2019 Copyright Text @
+                <a class="deep-orange-text" href="#!"> ICURO </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"

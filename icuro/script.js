@@ -107,31 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         searchNavElements.classList.add('hide');
     });
-    
 
-    /**********************************************************
-     * Menu bar is turning white when you scroll down the page
-     **********************************************************/
-
-    let nav = document.getElementsByTagName('nav');
-    var all = document.getElementsByClassName('dropdown-trigger');
     
-    window.onscroll = function(){
-        if (window.pageYOffset > 600) {
-            // Main
-            nav[0].classList.remove('black');
-            nav[0].classList.add('white');
-            for (var i = 0; i < all.length; i++) {
-                all[i].style.color = 'black';
-            }
-        }
-        else {
-            // Hero
-            nav[0].classList.remove('white');
-            nav[0].classList.add('black');
-            for (var i = 0; i < all.length; i++) {
-                all[i].style.color = 'white';
-            }
-        }
-    };
 });

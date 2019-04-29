@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -24,7 +24,7 @@
     </ul>
     <!-- Dropdown Structure -->
     <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#">Robotics</a></li>
+        <li><a href="robotics.html">Robotics</a></li>
         <li><a href="platforms.html">Platforms</a></li>
         <li><a href="security.html">Security</a></li>
     </ul>
@@ -35,18 +35,18 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -55,128 +55,137 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
 
 <main>
 
-    <!-- Breadcrumb -->
-    <div class="container">
-        <nav class="black">
-            <div class="nav-wrapper">
-                <div class="col s12">
-                    <a href="index.html" class="breadcrumb">Home</a>
-                    <a href="#!" class="breadcrumb">Competency</a>
-                    <a href="#!" class="breadcrumb">Robotics</a>
+    <div id="commonhero">
+        <!-- Breadcrumb -->
+        <div class="container">
+            <nav class="white z-depth-0">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb black-text">Home</a>
+                        <a href="#!" class="breadcrumb black-text">Competency</a>
+                        <a href="#!" class="breadcrumb black-text">Robotics</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-    <!-- /Breadcrumb -->
-
-    <!-- Hero -->
-    <div class="container" style="margin-top:160px;">
-        <div class="col s12 m4 l8">
-            <h1 class="white-text">ROBOTICS</h1>
-            <h3 class="white-text">New help coming your way</h3>
+            </nav>
         </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Hero -->
+        <div class="container" style="margin-top:160px;">
+            <div class="col s12 m4 l8">
+                <h1>ROBOTICS</h1>
+                <h3>New help coming your way</h3>
+            </div>
+        </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
 
     <!-- Robotics -->
-    <div class="container" style="margin-top:250px;">
+    <div class="container" style="margin-top:50px;">
         <div class="col s12 m4 l8">
-            <h3>Robotics</h3>
-            <p>Intelligent machines become much aware of the world around them as
-                they talk to other internet enabled devices.</p>
-            <p>In a smart manufacturing factory floor, autonomous vehicles communicate with
-                robotic arms or conveyors to take loading and unloading instructions without human
-                intervention.</p>
-            <p>These autonomous vehicles can recognize objects or people while navigating shop floor
+            <p class="flow-text">Our autonomous vehicles can communicate with robotic arms or conveyors to take loading and 
+                unloading instructions without human intervention.</p>
+            <p class="flow-text">They can recognize objects or people while navigating shop floor
                 stations, fulfillment centers, distribution centers, and warehouses.</p>
-            <p>The AI system competency is to develop a fully autonomous system stack by unifying the
-                power of sensors with artificial intelligence.</p>
-            <p>Both deep learning at the cloud and machine learning optimization at the edge are
-                implemented to get there.</p>
-            <p>Use cases for the industry 4.0 business are defined and deployed with such autonomous
-                systems.</p>
         </div>
     </div>
     <!-- /Robotics -->
 
     <!-- Case studies -->
-    <div class="container" style="margin-top:100px;">
-        <div class="col s12 m12 l12">
-            <div class="row">
-                <div class="col s12 m4 l4" style="margin-top: 50px;">
-                    <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
-                </div>
-                <div class="col s12 m8 l8">
-                    <a href="case-study.html"><h4>CASE STUDY #1</h4></a>
-                    <p>2001/01/01</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
+    <div class="container" style="margin-top:50px;">
+        <div class="col s12" style="margin-top: 50px;">
+            <a href="case-study.html"><h5>CASE STUDY #1</h5></a>
+            <div class="col s12 m4 l4">
+                <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
             </div>
-            <div class="row">
-                <div class="col s12 m4 l4" style="margin-top: 50px;">
-                    <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
-                </div>
-                <div class="col s12 m8 l8">
-                    <a href="case-study.html"><h4>CASE STUDY #2</h4></a>
-                    <p>2001/01/01</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
+            <div class="col s12 m4 l4">
+                <p>2001/01/01 - Author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="row">
-                <div class="col s12 m4 l4" style="margin-top: 50px;">
-                    <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
-                </div>
-                <div class="col s12 m8 l8">
-                    <a href="case-study.html"><h4>CASE STUDY #3</h4></a>
-                    <p>2001/01/01</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
+            <div class="col s12">
+                <a href="#!"><span class="chip">#robotics</span></a>
+                <a href="#!"><span class="chip">#security</span></a>
+                <a href="#!"><span class="chip">#platforms</span></a>
             </div>
-            <div class="row">
-                <div class="col s12 m4 l4" style="margin-top: 50px;">
-                    <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
-                </div>
-                <div class="col s12 m8 l8">
-                    <a href="case-study.html"><h4>CASE STUDY #4</h4></a>
-                    <p>2001/01/01</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
-                </div>
+        </div>
+        <div class="col s12" style="margin-top: 50px;">
+            <a href="case-study.html"><h5>CASE STUDY #2</h5></a>
+            <div class="col s12 m4 l4">
+                <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
+            </div>
+            <div class="col s12 m4 l4">
+                <p>2001/01/01 - Author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s12">
+                <a href="#!"><span class="chip">#robotics</span></a>
+                <a href="#!"><span class="chip">#security</span></a>
+                <a href="#!"><span class="chip">#platforms</span></a>
+            </div>
+        </div>
+        <div class="col s12" style="margin-top: 50px;">
+            <a href="case-study.html"><h5>CASE STUDY #3</h5></a>
+            <div class="col s12 m4 l4">
+                <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
+            </div>
+            <div class="col s12 m4 l4">
+                <p>2001/01/01 - Author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s12">
+                <a href="#!"><span class="chip">#robotics</span></a>
+                <a href="#!"><span class="chip">#security</span></a>
+                <a href="#!"><span class="chip">#platforms</span></a>
+            </div>
+        </div>
+        <div class="col s12" style="margin-top: 50px;">
+            <a href="case-study.html"><h5>CASE STUDY #4</h5></a>
+            <div class="col s12 m4 l4">
+                <img src="images/sample-350x230.jpg" class="left" style="width: 240px; padding: 10px;">
+            </div>
+            <div class="col s12 m4 l4">
+                <p>2001/01/01 - Author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="col s12">
+                <a href="#!"><span class="chip">#robotics</span></a>
+                <a href="#!"><span class="chip">#security</span></a>
+                <a href="#!"><span class="chip">#platforms</span></a>
             </div>
         </div>
     </div>
     <!-- /Case studies -->
 
     <!-- Call to action-->
-    <div class="container" style="margin-top:100px;">
-        <div class="col s12 m4 l8">
-            <h3>Our case studies</h3>
-            <p>For every technical problem we solve with a customer we create a case study.
-                All our case studies are available on this site to showcase our competency.</p>
-            <p>You can download our case studies or subscribe to receive the new ones in your mail.</p>
+    <div class="container" style="margin-top: 100px;">
+        <div>
+            <h5>Want to receive updates about ICURO's work in your mailbox?</h5>
+            <p>Subscribe to our newsletter and receive our new case studies when they are published.</p>
         </div>
         <div class="row">
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
             <div class="input-field col s12">
                 <input id="email" type="email" class="validate">
                 <label for="email">Email</label>
-                <a class="waves-effect waves-light btn lime black-text">Subscribe</a>
+                <a class="waves-effect waves-light btn-flat lime lighten-1">Send</a>
                 <p>We will not send spam or sell your details to third parties, you can unsubscribe at any time.</p>
             </div>
         </div>
@@ -187,55 +196,55 @@
 
 <!-- Footer -->
 <footer class="page-footer lime" style="margin-top:100px;">
-        <div class="grey darken-3" style="padding-top: 20px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col l4 s12">
-                        <h5>Company</h5>
-                        <ul>
-                            <li><a class="waves-effect btn-flat white-text" href="about.html">ABOUT</a></li>
-                            <li><a class="waves-effect btn-flat white-text" href="blog.html">BLOG</a></li>
-                            <li><a class="waves-effect btn-flat white-text" href="contact.html">CONTACT</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l6 s12">
-                        <h5>Office</h5>
-                        <ul>
-                            <li>
-                                <i class="material-icons">location_on</i> 3350 Scott Boulevard, Building 53 #5301
-                            </li>
-                            <li>
-                                Santa Clara, CA 95054
-                            </li>
-                            <li>
-                                <i class="material-icons">phone</i>
-                                (408) 816-7110
-                            </li>
-                            <li>
-                                <i class="material-icons">email</i>
-                                <a class="text-muted" href="mailto:info@icuro.com">info@icuro.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l2 s12">
-                        <h5>Social</h5>
-                        <ul>
-                            <li><a href="#!"><img src="images/facebook.svg" style="width: 25px;" alt="facebook"></a></li>
-                            <li><a href="#!"><img src="images/twitter.svg" style="width: 25px;" alt="twitter"></a></li>
-                            <li><a href="#!"><img src="images/linkedin.svg" style="width: 25px;" alt="linkedin"></a></li>
-                            <li><a href="#!"><img src="images/youtube.svg" style="width: 25px;" alt="youtube"></a></li>
-                        </ul>
-                    </div>
+    <div class="grey darken-3" style="padding-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a class="waves-effect btn-flat white-text" href="about.html">ABOUT</a></li>
+                        <li><a class="waves-effect btn-flat white-text" href="blog.html">BLOG</a></li>
+                        <li><a class="waves-effect btn-flat white-text" href="contact.html">CONTACT</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center-align">
-                    © 2019 Copyright Text @
-                    <a class="deep-orange-text" href="#!"> ICURO </a>
+                <div class="col l6 s12">
+                    <h5>Office</h5>
+                    <ul>
+                        <li>
+                            <i class="material-icons">location_on</i> 3350 Scott Boulevard, Building 53 #5301
+                        </li>
+                        <li>
+                            Santa Clara, CA 95054
+                        </li>
+                        <li>
+                            <i class="material-icons">phone</i>
+                            (408) 816-7110
+                        </li>
+                        <li>
+                            <i class="material-icons">email</i>
+                            <a class="text-muted" href="mailto:info@icuro.com">info@icuro.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l2 s12">
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="#!"><img src="images/facebook.svg" style="width: 25px;" alt="facebook"></a></li>
+                        <li><a href="#!"><img src="images/twitter.svg" style="width: 25px;" alt="twitter"></a></li>
+                        <li><a href="#!"><img src="images/linkedin.svg" style="width: 25px;" alt="linkedin"></a></li>
+                        <li><a href="#!"><img src="images/youtube.svg" style="width: 25px;" alt="youtube"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2019 Copyright Text @
+                <a class="deep-orange-text" href="#!"> ICURO </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"

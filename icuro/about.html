@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body style="background-image: url(images/hero-2.jpg); background-repeat: repeat-x;">
+<body>
 <header>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
@@ -35,20 +35,18 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="navbar-fixed">
-        <nav class="black">
+        <nav class="white">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/ICURO-logo-1.svg" style="width: 150px; height: 64px;"></a>
+                <a href="index.html" class="brand-logo "><img src="images/ICURO-logo-25.svg" style="width: 150px; height: 64px;"></a>
                 <ul class="right hide-on-med-and-down">
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown1">Strategy<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Strategy<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <!-- Dropdown Trigger -->
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown2">Competency<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown2">Competency<i
                             class="material-icons right">arrow_drop_down</i></a></li>
-                    <li class="nav-elements"><a class="dropdown-trigger" href="#!" data-target="dropdown3">Company<i
+                    <li class="nav-elements"><a class="dropdown-trigger black-text" href="#!" data-target="dropdown3">Company<i
                             class="material-icons right">arrow_drop_down</i></a></li>
                     <li class="nav-elements">
-                        <a id="searchButton"><i class="material-icons">search</i></a>
+                        <a id="searchButton"><i class="material-icons black-text">search</i></a>
                     </li>
                     <div id="searchNavElement" class="input-field hide">
                         <input id="search" type="search" required>
@@ -57,26 +55,29 @@
                     </div>
                 </ul>
             </div>
+            <div id="colorstrip"></div>
         </nav>
     </div>
 </header>
 
 <main>
 
-    <!-- Hero -->
-    <div class="container" style="margin-top:260px;">
-        <div class="col s12 m4 l8">
-            <blockquote>
-                <h3 class="mb-0 white-text">“I” stands for Intelligence and “CURO” is Latin for caring.</h3>
-                <footer class="blockquote-footer white-text">Bipin Thomas <cite title="Source Title"> founder of ICURO</cite>
-                </footer>
-            </blockquote>
+    <div id="commonhero">
+        <!-- Hero -->
+        <div class="container" style="padding-top: 150px;">
+            <div class="col s12 m4 l8">
+                <blockquote>
+                    <h3 class="mb-0">“I” stands for Intelligence and “CURO” is Latin for caring.</h3>
+                    <footer class="blockquote-footer">Bipin Thomas <cite title="Source Title"> founder of ICURO</cite>
+                    </footer>
+                </blockquote>
+            </div>
         </div>
+        <!-- /Hero -->
     </div>
-    <!-- /Hero -->
 
     <!-- Who we are -->
-    <div class="container" style="max-width: 1000px; margin-top: 270px; background-image: url(images/neural_background.jpg); padding:20px;">
+    <div class="container" style="max-width: 1000px; margin-top: 70px; background-image: url(images/neural_background.jpg); padding:20px;">
         <div class="col s12 m4 l8 center-align">
             <h2>Who we are</h2>
             <p>
@@ -100,20 +101,20 @@
 
     <!-- Making a difference -->
     <div class="container" style="margin-top: 100px;">
-        <h2>Making a difference</h2>
+        <h2 class="center-align">Making a difference</h2>
         <div class="row">
             <div class="col s12 m4 l4 center-align">
-                <img src="images/icon-people.svg" alt="people" style="width: 200px; height: 200px;">
+                <img src="images/icon-people-lime.svg" alt="people" style="width: 200px; height: 200px;">
                 <h6>We strive to empower people & individuals with technology</h6>
                 <p>Our credo is "People First" and we aim to maintain a human-centered approach.</p>
             </div>
-            <div class="col s12 m4 l4">
-                    <img src="images/icon-ambition2.svg" alt="ambition" style="width: 200px; height: 200px;">
+            <div class="col s12 m4 l4 center-align">
+                    <img src="images/icon-ambition2-lime.svg" alt="ambition" style="width: 200px; height: 200px;">
                 <h6>We strive to help businesses realize their goals and ambitions</h6>
                 <p>We focus on empowering people to build the future of businesses and communities.</p>
             </div>
-            <div class="col s12 m4 l4">
-                    <img src="images/icon-community.svg" alt="community" style="width: 200px; height: 200px;">
+            <div class="col s12 m4 l4 center-align">
+                    <img src="images/icon-community-lime.svg" alt="community" style="width: 200px; height: 200px;">
                 <h6>We strive to make a positive difference in the community</h6>
                 <p>We are passionate to make an impact and we exist to deliver value to society.</p>
             </div>
@@ -124,33 +125,113 @@
     <!-- Meet our team -->
     <div class="container" style="margin-top: 100px;">
         <div class="col s12 m4 l8">
-            <h3>Meet our team</h3>
-            <p>
-                In this era of disruptive technologies shaping new businesses, people still come first.
-            </p>
-            <p>
-                Our team brings in the combined business and technology expertise to lead you into the intelligence
-                revolution.
-            </p>
-            <p>
-                We rely on an ever-expanding group of experts working hand in hand, among them industry practitioners,
-                hardware-software convergence experts, technology platform specialists, partners and consultants.
-            </p>
-            <p>
-                We are inspired by the future of autonomous technologies, but we stay grounded by building expertise.
-            </p>
+            <h3 class="center-align">Meet our team</h3>
             <div class="row">
                 <div class="col s12 m3 l3">
-                    <img src="images/engineer.jpg" alt="photo" style="width:150px;" class="left circle">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m9 l9">
-                    <blockquote class="right">
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                        <footer class="blockquote-footer">Aenean A., Justo Cras <cite title="Source Title"> Engineer at
-                            ICURO</cite></footer>
-                    </blockquote>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="card">
+                        <div class="card-image activator">
+                            <img class="activator" src="images/avatar.png">
+                            <span class="card-title">Ben Johnson</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Ben Johnson<i class="material-icons right">close</i></span>
+                            <p>Top engineer, bakes awesome cookies.</p>
+                            <a class="btn-flat light-blue darken-3 white-text">LINKED <img src="images/linkedin.svg" style="width: 25px;"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,14 +241,9 @@
     <!-- Partners -->
     <div class="container" style="margin-top: 100px;">
         <div class="col s12 m4 l8">
-            <h3>Our partners</h3>
-            <p>
-                We are proud to deliver innovative solutions and services in partnership with Fortune 500 corporations
-                and other iconic enterprises, coming from different fields such as smart manufacturing and digital health
-                ecosystems.
-            </p>
+            <h3 class="center-align">Our partners</h3>
         </div>
-        <div class="col s12 m4 l8">
+        <div class="col s12 m4 l8 center-align">
             <img src="images/aws-logo.png" style="width:150px; padding: 10px;">
             <img src="images/iota-logo.png" style="width:150px; padding: 10px;">
             <img src="images/nvidia-logo.png" style="width:150px; padding: 10px;">
@@ -178,48 +254,60 @@
     </div>
     <!-- /Partners -->
 
-    <!-- Press release -->
+    <!-- Latest news -->
     <div class="container" style="margin-top: 100px;">
-        <div class="col s12 m4 l8">
-            <h3>Press release</h3>
-        </div>
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
-                        <p>Autonomous Manufacturing With Hardware Innovation, an interview with Bipin Thomas</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">THINGS WORX MAGAZINE</span>
-                        <p>IoT Platform Launches Consumer-Centric Care, an interview with Bipin Thomas</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
+        <div>
+            <h3 class="center-align">Press release</h3>
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
+                            <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
+                            <p>Interview with Bipin Thomas</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link to source</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">HEALTH CARE BUSINESS NEWS</span>
-                        <p>Consumer-Centric Technology Payoff, an interview with Bipin Thomas</p>
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
+                            <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
+                            <p>Interview with Bipin Thomas</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link to source</a>
+                        </div>
                     </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="images/sample-350x230.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">MANUFACTURING TECH. INSIGHTS</span>
+                            <p>Bringing Autonomous Manufacturers closer To Reality With Hardware Innovation</p>
+                            <p>Interview with Bipin Thomas</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Link to source</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Press release -->
+    <!-- /Latest news -->
 
 </main>
 
