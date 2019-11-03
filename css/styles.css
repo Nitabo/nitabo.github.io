@@ -208,19 +208,6 @@ p + h3 {
 }
 
 
-/* Skills
--------------------------------*/
-
-
-
-
-/* Ethics
--------------------------------*/
-
-.ethics p {
-    text-align: justify;
-}
-
 
 /* Media Queries
 -------------------------------*/
@@ -252,7 +239,7 @@ p + h3 {
 @media (max-width: 749px) {
 	nav {
         position: static;
-        display: none;
+/*        display: none;*/
     }
     /*Make all menu links full width*/
     nav a {
@@ -265,4 +252,10 @@ p + h3 {
 	#about {
 		padding-top: 0;
 	}
+    footer a.smedium {
+        font-size: 0.5em;
+    }
+    h2 {
+        font-size: 30px;
+    }
 }
