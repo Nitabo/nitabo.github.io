@@ -1,25 +1,26 @@
 /* Color Palette
 
-https://coolors.co/f6e8ea-ef626c-22181c-312f2f-84dccf
-#f6e8ea - Isabelline (very light pink)
-#ef626c - Light Carmine Pink
-#22181c - Eerie Black
-#312f2f - Jet (drak gray/brown)
-#84dccf - Middle Blue Green
-
-#ed4c67 - Strong pink
-#9FA8DA - Lavender
+https://coolors.co/006064-c2185b-f3e6e2-f1fffa-4ecdc4
+Dark Cyan : #007378
+Raspberry : #d81b60
+Misty Rose : #f3e6e2
+Mint Cream : #f1fffa
+Medium Turquoise : #4ecdc4
 ------------------------------*/
 
 /* Google Fonts
 
-    font-family: 'Homemade Apple', cursive;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Source Serif Pro', serif;
-    font-family: 'Special Elite', cursive;
-    font-family: 'Architects Daughter', cursive;
-    font-family: 'Merienda One', cursive;
+Print
+Titres - Modern Love
+Intitulés - Century gothic
+Texte - Consolas
+Dates - Georgia
+
+Web
+font-family: 'Kalam', handwriting - h1/h2
+font-family: 'Montserrat', sans-serif - h3
+font-family: 'Inconsolata', monospace - p
+font-family: 'Playfair Display', serif - dates
 
 -------------------------------*/
 
@@ -28,48 +29,52 @@ https://coolors.co/f6e8ea-ef626c-22181c-312f2f-84dccf
 /* Global Styles
 -------------------------------*/
 
-/* apply a natural box layout model to all elements, but allowing components to change
- Paul Irish code */
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
-    font-family: 'Rokkitt', serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 20px;
     margin: 0;
 }
 
 h1, h2 {
-    font-family: 'Raleway', sans-serif;
 	font-weight: bold;
-	text-transform: uppercase;
 }
 
 h1 {
+    font-family: 'Kalam', cursive;
     font-size: 80px;
 }
 
 h2 {
+    font-family: 'Kalam', cursive;
     font-size: 40px;
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     margin: 0;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+    padding-top: 10px;
+    margin-bottom: 5;
+}
+
+p {
+    padding-top: 10px;
 }
 
 a {
     font-family: 'Raleway', sans-serif;
-	color: #ed4c67;
+	color: #4ecdc4;
 }
 
 a:hover {
     text-decoration: none;
-	background-color: #ed4c67;
+	background-color: #d81b60;
 }
 
 hr {
@@ -92,7 +97,7 @@ hr {
 
 .button {
     text-decoration: none;
-    background-color: #9FA8DA;
+    background-color: #c2185b;
     color: #000000;
     padding: 15px;
     display: inline-block;
@@ -101,22 +106,18 @@ hr {
 /* Header and Footer
 -------------------------------*/
 header {
-    background-color: #ed4c67;
+    background-color: #007378;
     color: #f6e8ea;
 }
 
 /* Header */
 header {
-    padding-top: 50px;
     position: relative;
     text-align: justify;
 }
 
 .profile-image {
-    border-radius: 50%;
-	border: 5px dotted white;
-	padding: 3px;
-	background: #9FA8DA;
+    border-radius: 100%;
 }
 
 .download {
@@ -126,7 +127,7 @@ header {
 }
 
 header h1, header h2 {
-    color: white;
+    color: #f3e6e2;
     margin: 0;
 }
 
@@ -143,63 +144,33 @@ footer {
 }
 
 footer a:hover {
+    color: #d81b60;
 	background-color: white;
 }
 
 /* Navigation
 -------------------------------*/
-nav {
-    text-align:center;
-    background: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+nav a i {
+    margin-left: 15px;
 }
 
-nav a {
+nav li a {
     color: #312f2f;
-    display: inline-block;
-    padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
 	font-size: 0.8em;
     font-weight: 600;
 }
 
-nav a:hover {
-    background-color: #ed4c67;
+nav li a:hover {
+    background-color: #4ecdc4;
     color: white;
-}
-
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-    color: #312f2f;
-    background: white;
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	font-size: 0.8em;
-	font-weight: bold;
-    text-align: center;
-	position: relative;
-    top: 0;
-    padding: 10px 0;
-    display: none;
-}
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ nav{
-    display: block;
 }
 
 
 /* Experience
 -------------------------------*/
-.experience {
-    background-color: #f6e8ea;
-}
 
 h3 ~ p {
     margin: 0;
@@ -220,12 +191,6 @@ h3 ~ p {
 
 /* Education
 -------------------------------*/
-.education {
-    /*background-color: #ef626c;*/
-    background: linear-gradient(rgba(239, 98, 108, 0.8), rgba(239, 98, 108, 0.5)),
-                url(../images/pink-notebook-1.jpg) no-repeat fixed;
-    background-size: cover;
-}
 
 p + h3 {
     margin-top: 30px;
@@ -238,39 +203,12 @@ p + h3 {
 
 /* Skills
 -------------------------------*/
-.skills {
-	background-color: #f6e8ea;
-}
 
-table {
-  overflow-x: auto;
-  width: 100%;
-}
 
-th {
-	text-align: center;
-	font-size: 25px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-td, th {
-  border: 1px solid #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-td {
-  text-align: center;
-}
 
 
 /* Ethics
 -------------------------------*/
-.ethics {
-	background: url(../images/background-1.png);
-	background-size: 100%;
-}
 
 .ethics p {
     text-align: justify;
