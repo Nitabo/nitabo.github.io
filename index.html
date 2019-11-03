@@ -5,294 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anita Prak Resume</title>
 	<link rel="icon" type="image/x-icon" href="favicon-7.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Homemade+Apple|Inconsolata|Merienda+One|Raleway:400,700|Source+Serif+Pro|Special+Elite|Rokkitt" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Homemade+Apple|Inconsolata|Merienda+One|Raleway:400,700|Source+Serif+Pro|Special+Elite|Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Kalam|Montserrat|Playfair+Display&display=swap" rel="stylesheet"> 
+<!--    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Gruppo|Megrim|Poiret+One&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- // Intro -->
     <header id="about">
-		<label for="show-menu" class="show-menu">Menu</label>
-		<input type="checkbox" id="show-menu" role="button">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-			<a href="#skills">Skills</a>
-			<a href="#ethics">Ethics</a>
-            <a href="#contact">Contact</a>
-            <a href="AnitaPrak-Resume.pdf" class="button download" download><i class="fas fa-file-download"></i> <span class="collapse-button">Download</span></a>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="white text-black z-depth-0">
+                <div class="nav-wrapper">
+                    <a href="#about" class="brand-logo pink"><i class="material-icons">home</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#competence">Compétences</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="AnitaPrak-Resume.pdf" class="pink darken-1 btn-large">Download <i class="material-icons right">get_app</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
         <div class="content-wrap">
-            <img class="profile-image col-narrow" src="images/new-cameo-filtre-size_blur.jpg" alt="Anita's picture">
+            <img class="profile-image col-narrow" src="images/WonderWoman03_edited.jpg" alt="Anita's picture">
             <div class="col-wide">
-            <h1>Anita Prak</h1>
-            <h2>Junior Web Developer</h2>
-                <p>I am a French front-end developer looking for a full-time job on an OPT Visa, I love the web and working with design.</p>
-                <p>I specialize in front-end developing as greatly enjoy working with design and aesthetics. I have a general I.T. background as I have previously
-                studied programming, networking, system and security.
-            </p>
+                <h1>anita prak</h1>
+                <h3>WEB DESIGN</h3>
+                <p>Diplômée d’informatique générale avec un intérêt pour le Web et le design et une expérience de gestion de projets, j’ai pour objectif de créer des outils simples et efficients de gestion d’activité.</p>
             </div>
         </div>
         
     </header>
     
     <main> 
+        <!-- // Competences -->
+        <section class="competence" id="competence">
+            <div class="content-wrap">
+                <h2>Compétences</h2>
+                
+                <div class="row">
+                    <div class="col s6">
+                        <h3>Design et interaction</h3>
+                        <ul>
+                            <li>UI - UX; HTML – CSS – JavaScript ;</li>
+                            <li>Créative et perfectionniste ;</li>
+                            <li>Design éthique et universel.</li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                        <h3>Gestion de projet</h3>
+                        <ul>
+                            <li>Agilité des projets ;</li>
+                            <li>Intégration du client dans le projet ;</li>
+                            <li>Expertise technique et fonctionnelle.</li>
+                        </ul>
+                    </div>
+                </div>
+               <div class="row">
+                    <div class="col s6">
+                        <h3>Développement</h3>
+                        <ul>
+                            <li>Back-end et front-end: PHP, Python ;</li>
+                            <li>REST APIs, hébergement AWS ;</li>
+                            <li>Administration et sécurité S.I.</li>
+                        </ul>
+                    </div>
+                    <div class="col s6">
+                        <h3>Travail d'équipe</h3>
+                        <ul>
+                            <li>Organisée et objective ;</li>
+                            <li>A l'écoute des autres ;</li>
+                            <li>Déterminée à rendre service au client.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // Expertise -->
+        
+        
         <!-- // Work Experience -->
         <section class="experience" id="experience">
             <div class="content-wrap">
-            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <h2>Expérience</h2>
 
-                        <!-- Job Details: copy this whole block to add more jobs -->
-            <div class="col-narrow">
-                <h3>Junior Web Developer</h3>
-                <p class="uppercase">ICURO</p>
-                <p>Santa Clara, CA</p>
-                <p>2019</p>
+                <h5>2019</h5>
+                <h3>Web Designer</h3>
+                <p>ICURO - Santa Clara, CA (USA)</p>
+
+                <p>Avec mon mari, nous avons créé et développé un site Web moderne et dynamique présentant les services en Intelligence Artificielle de notre employeur.</p>
+                
+                
+                <h5>2018</h5>
+                <h3>Administrateur sécurité et conformité</h3>
+                <p>MANHATTAN - Lyon, Rhône (France)</p>
+
+                <p>Seule aux commandes d'un projet de mise en conformité de S.I., j'ai établi les règles de sécurité logicielles, matérielles et organisationnelles à mettre en place.</p>
+
+                <h5>2017</h5>
+                <h3>Développeur Web</h3>
+                <p>SDN CYBERPROTECT - Lyon, Rhône (France)</p>
+                
+                <p>En partenariat avec un développeur Sénior, j’ai développé une application Web moderne et user-friendly qui analysait et représentait des données complexes.</p>
+                
             </div>
-
-            <!-- Add as many paragraphs as you need. -->
-            <div class="col-wide job-description">
-                <p>As a intern in a Silicon Valley start-up, partnering with a more experienced developer, I am currently designing and 
-				programming the new company's website, presenting A.I. solutions to non-experts users. I have managed to build a honest 
-				and trusting partnership with the client and I do my best to stay focused on the end-user perspective</p>
-
-                <!-- This list can be deleted if you don't want to use it. -->
-                <p>Key contributions:</p>
-                <ul>
-                    <li>Designing a modern and dynamic interface</li>
-                    <li>Making high-end technology look appealing and user-friendly</li>
-                    <li>Leading the designing process and the technical project</li>
-                </ul>
-            </div>
-                <!-- end of Job Details block. -->
-			
-			<!-- Job Details: copy this whole block to add more jobs -->
-            <div class="col-narrow">
-                <h3>Junior Web Developer</h3>
-                <p class="uppercase">SDN Cyberprotect</p>
-                <p>Lyon, France</p>
-                <p>2016 - 2017</p>
-            </div>
-
-            <!-- Add as many paragraphs as you need. -->
-            <div class="col-wide job-description">
-                <p>As a trainee in a Network Security provider, I teamed along with a Senior Developer
-                    to work on the simple yet challenging project of a user-friendly web application processing, 
-					interpreting and displaying relevantly picked data.</p>
-
-                <!-- This list can be deleted if you don't want to use it. -->
-                <p>Key contributions:</p>
-                <ul>
-                    <li>Created a dynamic website processing large data amount</li>
-                    <li>Teamed up with a Senior Developer</li>
-                    <li>Responsible for bringing my creativity and design talent</li>
-                </ul>
-            </div>
-            <!-- end of Job Details block. -->
-
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <div class="col-narrow">
-                <h3>Junior Web Developer</h3>
-                <p class="uppercase">P3Design</p>
-                <p>Buenos Aires, Argentina</p>
-                <p>2013</p>
-            </div>
-
-            <!-- Add as many paragraphs as you need. -->
-            <div class="col-wide job-description">
-                <p>As a trainee in a creative web agency, I maintained the company's websites,
-                    adding content and data via WordPress. I managed the SEO, the back-end and front-end
-                    development and the customers' needs.</p>
-
-                <!-- This list can be deleted if you don't want to use it. -->
-                <p>Key contributions:</p>
-                <ul>
-                    <li>Maintained and updated WordPress websites</li>
-                    <li>Created and animated a professional Facebook page</li>
-                    <li>Solved day-to-day customers' issues</li>
-                </ul>
-            </div>
-                <!-- end of Job Details block. -->
         </section>
+        <!-- // Work Experience -->
 
-
+            
         <!-- // Education -->
         <section class="education" id="education">
             <div class="content-wrap">
-                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-                <hr>
-                <!-- School details: copy this whole block to add more schools. -->
-                <h3>UCSC Silicon Valley Extension, Santa Clara CA</h3>
-                <p class="uppercase">Internet Programming Certificate</p>
-                <p>2018 - 2019</p>
-                <hr>
+                <h2>Education</h2>
+                
+                <h5>2019</h5>
+                <h3>Certificat Internet Programming & Development</h3>
 
-            <!-- Add as many paragraphs as you need. -->
-                <p>This Professional Certificate is focusing on technical skills training to build interactive websites,
-                    and cloud applications, covering all major platforms and frameworks. On my free time I also
-                    study web design and front-end development techniques and User Experience. </p>
+       
+                <p>UCSC Silicon Valley Extension - Santa Clara, CA (USA)</p>
+ 
                 <ul>
-                    <li>Programming languages</li>
-                    <li>Frameworks and libraries</li>
-                    <li>Design and User Experience</li>
+                    <li>- Langages de programmation ;</li>
+                    <li>- Frameworks et Libraries ;</li>
+                    <li>- Développement Back-end et Front-end ;</li>
+                    <li>- Design UI et UX.</li>
                 </ul>
-                <hr>
-            <!-- End of school details. -->
 
-            <!-- School details: copy this whole block to add more schools. -->
-                <h3>Sciences U Lyon, France</h3>
-                <p class="uppercase">Master of Computer Science</p>
-                <p>2014 - 2019</p>
-                <hr>
 
-            <!-- Add as many paragraphs as you need. -->
-                <p>This Professional Master's Degree focused on Computer Engineering, including technical skills and 
-				project management. This experience allowed me to gain solid knowledge in modern technologies, 
-				hardware and software, and I.T. systems management.</p>
+        
+                <h5>2019</h5>
+                <h3>Master en Ingénierie Informatique</h3>
+                <p>CRESPA Sciences U - Lyon, Rhône (France)</p>
+
                 <ul>
-                    <li>Software and Mobile Programming</li>
-                    <li>Network Administration and Security</li>
-                    <li>Digital Marketing and communication</li>
+                    <li>-	Développement Mobile et Applicatif ; </li>
+                    <li>-	Audit et Administration Réseau ; </li>
+                    <li>-	Sécurité logicielle, matérielle et organisationnelle ;</li>
+                    <li>-	Gestion de Projets Agiles ; </li>
+                    <li>-	Marketing Digital et Communication.</li>
                 </ul>
-                <hr>
-            <!-- End of school details. -->
-
-            <!-- School details: copy this whole block to add more schools. -->
-                <h3>University Lyon 2 Lumière, France</h3>
-                <p class="uppercase">Bachelor's Degree</p>
-                <p>2008 - 2012</p>
-                <hr>
-
-            <!-- Add as many paragraphs as you need. -->
-                <p>This University Bachelor's Degree aimed to train translators and interpreters familiar with modern
-                    communication tools. There I started my first classes as a web developer. I got hooked and soon after
-                    enrolled in a general I.T. curriculum starting from an Associate's Degree to a Master's Degree.</p>
-                <ul>
-                    <li>Web Programming</li>
-                    <li>Translation, Interpretation</li>
-                    <li>Visual communication</li>
-                </ul>
-                <!-- End of school details. -->
-            </div>
-        </section>
-
-		<!-- // Skills -->
-        <section class="skills" id="skills">
-            <div class="content-wrap">
-                <h2><i class="fas fa-wrench"></i> Skills</h2>
-
-            <!-- Add as many paragraphs as you need. -->
-				<table>
-				  <tr>
-					<th>Technical</th>
-					<th>Personal</th>
-				  </tr>
-				  <tr>
-					<td>HTML5 - CSS3</td>
-					<td>Team-working</td>
-				  </tr>
-				  <tr>
-					<td>JavaScript - AJAX</td>
-					<td>Goal-oriented</td>
-				  </tr>
-				  <tr>
-					<td>MEAN - ReactJS</td>
-					<td>Creative</td>
-				  </tr>
-				  <tr>
-					<td>RESTful APIs</td>
-					<td>Organized</td>
-				  </tr>
-				  <tr>
-					<td>Python - Django</td>
-					<td>Detail-oriented</td>
-				  </tr>
-				  <tr>
-					<td>Design - UX</td>
-					<td>Hard-working</td>
-				  </tr>
-				</table>
 
             </div>
         </section>
-
-		<!-- // Ethics -->
-        <section class="ethics" id="ethics">
-            <div class="content-wrap">
-                <h2><i class="fas fa-book-open"></i> Work Ethics</h2>
-                <hr>
-
-            <!-- Add as many paragraphs as you need. -->
-                <p>I strongly believe that every design decision impact our users’ lives. The web is everywhere nowadays, conditioning our
-				 access to democracy and education, to entertainment and information. It is our duty as "Web Makers" to consider the broader 
-				 consequences of our work and engage in ethical design to ensure that the tools we create empower an impartial use of  
-				 the power of Internet. I am currently writing a thesis to illustrate my views. Building a safe, fair and inclusive place is 
-				 my motto and I wish to spread awareness among my peer developers and my clients. Here is my manifesto.</p>
-
-				<blockquote>" Be the change you wish to see in the world " - Mahatma Gandhi</blockquote>
-				<hr>
-
-				<h3>Manifesto</h3>
-				
-				<ul>
-					<li>I will build a legal and ethical project:</li> 
-					<ul>
-						<li>I will guide my client all along the project</li>
-						<li>I will ensure a trusting and fruitful designer-client relationship</li>
-						<li>I will follow strict and comprehensive project guidelines</li>
-					</ul>
-					<li>I will be considerate of other parties:</li>
-					<ul>
-						<li>I will do my best to help and inform the end user</li>
-						<li>I will be considerate of my peer developers</li>
-						<li>I will mind the resource usage of my project</li>
-					</ul>
-					<li>I will be complying with the law:</li>
-					<ul>
-						<li>I will not be unlawfully and unexpectedly contacting the user</li>
-						<li>I will not unlawfully and unethically manipulate the user data</li>
-						<li>I will respect the copyright and intellectual property laws</li>
-					</ul>
-					<li>I will be a honest and moral developer:</li>
-					<ul>
-						<li>I will not manipulate the user’s opinion or try to take their money</li>
-						<li>I will not make money out of the user’s data or out of their resources</li>
-						<li>I will not fall for easy scams to get traffic, popularity or to gain money</li>
-					</ul>
-					<li>I will be working for accessibility and inclusion:</li>
-					<ul>
-						<li>I will be working for disability and impairment with accessible design and content</li>
-						<li>I will design with technology disparities in mind, in terms of technology and bandwidth</li> 
-						<li>I will design for social inclusion, no mater the income or location</li>
-						<li>I will design for all education levels</li>
-					</ul>
-					<li>I will be working towards inclusive representation:</li>
-					<ul>
-						<li>I will not enforce racist bias and I will work towards inclusive cultural representation</li>
-						<li>I will not enforce sexist bias and I will work towards inclusive women representation</li>
-						<li>I will not enforce unhealthy beauty standards and I will work towards inclusive body representation</li>
-					</ul>
-				</ul>
-
-            </div>
-        </section>
+        <!-- // Education -->
+        
     </main>
     
     <!-- // Footer & contact info -->
     <footer id="contact">
         <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
-        
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <div class="contact-info">
-            <a href="mailto:anitazprak@gmail.com"><i class="fas fa-at"></i> Email me</a>
-            <a href="https://github.com/Nitabo/nitabo.github.io" target="_blank"><i class="fab fa-github"></i> My Github</a>
-            <a href="https://www.linkedin.com/in/anita-prak" target="_blank"> My Linked<i class="fab fa-linkedin"></i></a>
-        </div>
+            <div class="contact-info">
+                <a href="mailto:anitazprak@gmail.com"><i class="fas fa-at"></i> Email me</a>
+                <a href="https://github.com/Nitabo/nitabo.github.io" target="_blank"><i class="fab fa-github"></i> My Github</a>
+            </div>
 
         <p>Copyright <i class="far fa-copyright"></i> 2019 by Anita Prak</p>
         </div>
     </footer>
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
