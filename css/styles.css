@@ -138,8 +138,15 @@ footer {
     text-align: center;
 }
 
+footer a.smedium {
+    font-size: 1.25rem;
+}
+
+footer a.cta {
+    color: #4ecdc4;
+}
+
 .contact-info a {
-    padding: 10px;
     display: inline-block;
 }
 
