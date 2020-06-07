@@ -1,8 +1,7 @@
 /* Color Palette
 
-https://coolors.co/006064-c2185b-f3e6e2-f1fffa-4ecdc4
-Dark Cyan : #007378
-Raspberry : #d81b60
+Smoky black : #0c0f0a
+Raspberry : #d81b60  // #E91E63
 Misty Rose : #f3e6e2
 Mint Cream : #f1fffa
 Medium Turquoise : #4ecdc4
@@ -10,18 +9,11 @@ Medium Turquoise : #4ecdc4
 
 /* Google Fonts
 
-Print
-Titres - Modern Love
-Intitulés - Century gothic
-Texte - Consolas
-Dates - Georgia
-
 Web
-font-family: 'Kalam', handwriting - h1/h2
-font-family: 'Montserrat', sans-serif - h3
-font-family: 'Inconsolata', monospace - p
-font-family: 'Playfair Display', serif - dates
 
+    font-family: 'Prompt', sans-serif;
+
+    font-family: 'Roboto Mono', monospace;
 -------------------------------*/
 
 
@@ -30,45 +22,55 @@ font-family: 'Playfair Display', serif - dates
 -------------------------------*/
 
 body {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     margin: 0;
 }
 
-h1, h2 {
-	font-weight: bold;
-}
-
 h1 {
-    font-family: 'Kalam', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
     font-size: 80px;
 }
 
 h2 {
-    font-family: 'Kalam', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
     font-size: 40px;
-    margin-top: 0;
     text-transform: uppercase;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-size: 30px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
     margin: 0;
 }
 
 h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Prompt', sans-serif;
     padding-top: 10px;
-    margin-bottom: 5;
+}
+
+h6 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 50px;
 }
 
 p {
     padding-top: 10px;
+    margin: 0;
 }
 
 a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Prompt', sans-serif;
 	color: #4ecdc4;
 }
 
@@ -84,10 +86,28 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.content-header {
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
+    padding: 40px 50px;
+    overflow: auto;
+}
+
+.content-large {
+    margin: 0 auto;
     padding: 60px 50px;
+    overflow: auto;
+}
+
+.content-high {
+    margin: 0 auto;
+    padding: 40px 0;
     overflow: auto;
 }
 
@@ -103,10 +123,16 @@ hr {
     display: inline-block;
 }
 
+.row {
+    margin-bottom: auto;
+}
+
+
+
 /* Header and Footer
 -------------------------------*/
 header {
-    background-color: #007378;
+    background-color: #0c0f0a;
     color: #f6e8ea;
 }
 
@@ -114,6 +140,16 @@ header {
 header {
     position: relative;
     text-align: justify;
+}
+
+nav a h1 {
+    font-size: 49px;
+    margin: 5px;
+}
+
+.black-header {
+    background-color: #0c0f0a;
+    text-align: right;
 }
 
 .profile-image {
@@ -132,27 +168,21 @@ header h1, header h2 {
 }
 
 /* Footer */
-footer {
-	background-color: #312f2f;
-	color: white;
-    text-align: center;
-}
-
-footer a.smedium {
-    font-size: 1.25rem;
-}
-
-footer a.cta {
-    color: #4ecdc4;
+a.cta {
+    color: #c2185b;
 }
 
 .contact-info a {
     display: inline-block;
 }
 
-footer a:hover {
-    color: #d81b60;
-	background-color: white;
+a:hover {
+    color: #4ecdc4;
+	background-color: black;
+}
+
+footer a img:hover {
+    background-color: #4ecdc4;
 }
 
 /* Navigation
@@ -163,7 +193,7 @@ nav a i {
 }
 
 nav li a {
-    color: #312f2f;
+    color: #f3e6e2;
     text-decoration: none;
     text-transform: uppercase;
 	font-size: 0.8em;
@@ -172,7 +202,19 @@ nav li a {
 
 nav li a:hover {
     background-color: #4ecdc4;
-    color: white;
+    color: black;
+}
+
+
+/* Service
+-------------------------------*/
+.service .card {
+    border: 1px solid #4ecdc4;
+}
+
+
+input[type=range], input[type=range]+.thumb {
+    cursor: none;
 }
 
 
@@ -205,6 +247,18 @@ p + h3 {
 
 .education p {
     text-align: justify;
+}
+
+
+/* Portfolio
+-------------------------------*/
+.portfolio img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.portfolio img:hover {
+    filter: grayscale(0);
 }
 
 
@@ -242,9 +296,9 @@ p + h3 {
 /*        display: none;*/
     }
     /*Make all menu links full width*/
-    nav a {
+    /* nav a {
         width: 100%;
-    }
+    } */
 	/*Display 'show menu' link*/
     .show-menu {
         display:block;
@@ -252,10 +306,14 @@ p + h3 {
 	#about {
 		padding-top: 0;
 	}
-    footer a.smedium {
-        font-size: 0.5em;
-    }
     h2 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .collection .collection-item {
+        font-size: 0.8em;
+        padding: 10px;
     }
 }
